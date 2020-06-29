@@ -1,0 +1,136 @@
+#main {
+  color: ghostwhite;
+  text-align: center;
+  min-height: 100vh;
+  max-height: 100vh;
+  display: flex;
+  flex-direction: column;
+
+  .header {
+    display: flex;
+    min-width: 100%;
+
+    .export-is-processing {
+      cursor: not-allowed;
+    }
+
+    .export-is-processing:hover {
+      img {
+        max-width: 3rem !important;
+        margin: 1rem !important;
+      }
+    }
+
+    label {
+      cursor: pointer;
+    }
+
+    .import,
+    .export {
+      cursor: pointer;
+      flex-grow: .2;
+      min-width: 3rem;
+      max-width: 6rem;
+
+      img {
+        max-width: 3rem;
+        margin: 1rem;
+      }
+
+      img:hover {
+        max-width: 3.1rem;
+        margin: .75rem;
+      }
+    }
+
+    .input-container {
+      flex-grow: 1;
+    }
+  }
+
+  ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: start;
+    justify-content: center;
+    flex-grow: 1;
+
+    .delete-icon {
+      cursor: pointer;
+      position: absolute;
+      min-width: 3rem;
+      min-height: 3rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: .5rem;
+      background-color: rgba(255, 255, 255, .5);
+      border-radius: 50%;
+      box-shadow: 6px 6px 5px 1px rgba(0, 0, 0, .2);
+      z-index: 5;
+
+      img {
+        max-width: 2rem;
+      }
+    }
+
+    .delete-icon:hover {
+      background-color: rgba(255, 255, 255, .8);
+
+      img {
+        max-width: 2.2rem;
+      }
+    }
+
+    li {
+      list-style: none;
+      max-width: 14rem;
+      min-width: 14rem;
+      margin: .5rem;
+      box-shadow: 6px 6px 5px 1px rgba(0, 0, 0, .2);
+      background-color: #7d7d7d;
+      overflow: hidden;
+      display: flex;
+
+      .new-container {
+        z-index: 2;
+        position: absolute;
+
+        background-color: red;
+
+        img {
+          max-width: 7rem;
+          margin-top: -8.7rem;
+          padding-left: 15.8rem !important;
+          position: absolute;
+          rotate: 90deg;
+        }
+      }
+    }
+
+    li:hover {
+      background-color: #8d8d8d;
+
+      .card > img {
+        min-width: 102%;
+        margin-top: -1%;
+      }
+    }
+  }
+
+  .card {
+    z-index: 1;
+    display: block;
+    flex-grow: 1;
+
+    div {
+      color: ghostwhite;
+      text-decoration: none;
+    }
+
+    img {
+      min-width: 101%;
+    }
+  }
+}

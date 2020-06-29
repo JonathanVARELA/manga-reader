@@ -1,0 +1,26 @@
+# This compose file is meant for local development only.
+
+version: "3"
+
+services:
+
+  manga-reader:
+    image: library/node:14-alpine
+    container_name: manga-reader
+    stdin_open: true
+    volumes:
+      - ./manga-reader:/manga-reader
+    working_dir: /manga-reader
+    command: npm start dev
+    ports:
+      - 3000:3000
+
+  manga-parser:
+    image: library/node:14-alpine
+    container_name: manga-parser
+    volumes:
+      - ./manga-parser:/manga-parser
+    working_dir: /manga-parser
+    command: npm start dev
+    ports:
+    - 3001:3001

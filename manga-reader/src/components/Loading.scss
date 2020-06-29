@@ -1,0 +1,16 @@
+.loading {
+  display: flex;
+  justify-content: center;
+  margin: 10rem;
+  img {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  }
+  .loading-text {
+    display: flex;
+    flex-direction: row;
+    font-weight: bold;
+    font-size: 2rem;
+    position: absolute;
+    margin-top: -5rem;
+  }
+}

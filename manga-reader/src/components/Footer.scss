@@ -1,0 +1,19 @@
+footer {
+  bottom: 0;
+  min-width: 100%;
+  background: #1c1c1c;
+  min-height: 4rem;
+  max-height: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  span {
+    color: red;
+    font-size: 1.6rem;
+    margin: .5rem;
+  }
+  span:hover {
+    font-size: 1.7rem;
+    margin: .45rem;
+  }
+}

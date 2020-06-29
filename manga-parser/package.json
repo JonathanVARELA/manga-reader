@@ -1,0 +1,25 @@
+{
+  "name": "manga-parser",
+  "version": "1.0.0",
+  "description": "Manga Parser is a server used to scrap manga websites",
+  "main": "server.js",
+  "author": "Jonathan VARELA <jonathan.varela29@gmail.com>",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "manga"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "csv-parser": "^2.3.3",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "puppeteer": "^4.0.1",
+    "xmlhttprequest": "^1.8.0"
+  },
+  "devDependencies": {
+    "helmet": "^3.23.2"
+  }
+}

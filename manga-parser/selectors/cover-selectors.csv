@@ -1,0 +1,2 @@
+selector
+$("meta[name='twitter:image']").attr("content");

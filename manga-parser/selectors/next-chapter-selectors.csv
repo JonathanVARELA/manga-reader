@@ -1,0 +1,3 @@
+selector
+$(".btn-navigation-chap > a.back")[0]
+$(".navi-change-chapter-btn-next")[0]

@@ -1,0 +1,56 @@
+{
+  "name": "manga-reader",
+  "author": "Jonathan VARELA <jonathan.varela29@gmail.com>",
+  "description": "Manga Reader is a frontend used to read manga from other websites with endless scrolling feature ❤",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@material-ui/core": "^4.10.2",
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.5.0",
+    "@testing-library/user-event": "^7.2.1",
+    "@types/jest": "^24.9.1",
+    "@types/node": "^12.12.47",
+    "@types/react": "^16.9.41",
+    "@types/react-dom": "^16.9.8",
+    "dexie": "^3.0.1",
+    "dotenv": "^8.2.0",
+    "lodash.debounce": "^4.0.8",
+    "node-sass": "^4.14.1",
+    "react": "^16.13.1",
+    "react-detect-offline": "^2.4.0",
+    "react-dom": "^16.13.1",
+    "react-infinite-scroller": "^1.2.4",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "3.4.1",
+    "react-visibility-sensor": "^5.1.1",
+    "rfdc": "^1.1.4",
+    "styled-components": "^5.1.1",
+    "superagent": "^5.2.2",
+    "typescript": "^3.7.5"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@types/react-router-dom": "^5.1.5"
+  }
+}

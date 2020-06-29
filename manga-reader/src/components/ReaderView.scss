@@ -1,0 +1,28 @@
+.home-button {
+  position: fixed;
+  min-width: 18vw;
+  min-height: 20vh;
+  z-index: 4;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  img {
+    opacity: .02;
+    min-width: 80px;
+    min-height: auto;
+  }
+}
+
+.home-button:hover {
+
+  img {
+    background-color: rgba(0, 0, 0, .2);
+    box-shadow: 6px 6px 5px 1px rgba(0, 0, 0, .2);
+    border-radius: 40%;
+    padding: 2.5rem;
+    opacity: 1;
+  }
+}

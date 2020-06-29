@@ -1,0 +1,2 @@
+selector
+$("meta[name='twitter:title']").attr("content").replace(/[^\w]+([Mm])(angakakalot.com|anganelo).*/g, '');
