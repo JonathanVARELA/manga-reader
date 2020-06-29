@@ -249,7 +249,7 @@ const MainView = ({db}: { db: MangaDatabase, }) => {
                             <Link to={"/manga/" + getMangaUrl(manga)} style={{textDecoration: 'none'}}>
                                 <span className={"card"}>
                                     <img src={manga.cover} alt=""/>
-                                    <div>{manga.title}</div>
+                                    <div><p>{manga.title}</p></div>
                                 </span>
                             </Link>
                         </li>
