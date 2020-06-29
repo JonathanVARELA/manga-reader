@@ -5,7 +5,13 @@ import ChapterModel from "../models/ChapterModel";
 const MangaScrapperClient = () => {
 
     const request = async (url: string) => {
-        const result = await fetch(url).then((res) => res.json());
+        const result = await fetch(url).then((res) => {
+            if (res === undefined) {
+                return {error: 404, message: 'not found'};
+            } else {
+                return res.json();
+            }
+        });
         if (result instanceof HttpRequestError || result ! instanceof Manga) {
             console.error(result)
             return undefined
